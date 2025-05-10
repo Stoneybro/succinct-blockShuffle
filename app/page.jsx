@@ -68,7 +68,7 @@ const Preloader = ({ onComplete }) => {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 flex items-center justify-center bg-black bg-bluenoise-layer z-50"
+        className="fixed inset-0 flex items-center justify-center bg-black  z-50"
         // When phase === 3, fade out the entire overlay.
         animate={phase === 3 ? { opacity: 0 } : { opacity: 1 }}
         transition={{ duration: phase === 3 ? 1 : 0 }}
