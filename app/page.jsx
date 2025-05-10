@@ -481,7 +481,7 @@ export default function Home() {
 <div className="relative min-h-screen font-poppins text-black bg-[url('/succinctBackground.png')] gap-2 flex-col itme bg-cover bg-center bg-no-repeat flex items-center ">
 {/* Main UI is rendered regardless so its background is visible */}
 
-<div className="w-full  py-1  bg-gradient-to-b from-[#f9f9f9] to-[#dfdddd] shadow-xl flex items-center justify-between px-4 border border-gray-300">
+<div className="w-full   py-1   bg-gradient-to-b from-[#f9f9f9] to-[#dfdddd] shadow-xl flex items-center justify-between px-4 border border-gray-300">
   <div className="text-sm font-semibold">
   BlockShuffle
   </div>
@@ -493,9 +493,9 @@ export default function Home() {
     <div className=""><Volume2 size={16} strokeWidth={2} /></div>
   </div>
 </div>
-<div className="bg-white rounded-t-lg w-[90vw] md:w-full md:max-w-[700px] shadow-2xl flex flex-col items-center md:relative">
+<div className="bg-white rounded-t-lg  h-[70vh] w-[90vw] md:h-[unset] md:w-full md:max-w-[700px] shadow-2xl flex flex-col items-center md:relative">
 
-<div className=" w-full  rounded-t-lg bg-gradient-to-b from-[#e0e0e0] to-[#b5b5b5]  flex items-center justify-between px-4 ">
+<div className=" w-full z-20 sticky top-0  rounded-t-lg bg-gradient-to-b from-[#e0e0e0] to-[#b5b5b5]  flex items-center justify-between px-4 ">
   {/* Left: Traffic lights */}
   <div className="flex items-center space-x-2">
     <span className="w-3 h-3 rounded-full bg-red-500 border border-black/20 shadow-inner"></span>
@@ -512,7 +512,7 @@ export default function Home() {
   {/* Right: empty or future icons */}
   <div className="w-6"></div>
 </div>
-
+<div className="overflow-y-scroll scrollbar-custom w-full">
 <div className="w-full flex flex-col items-center justify-center gap-4 py-4">
         <div className="text-5xl font-anton text-[#ff12c8]">BLOCK SHUFFLE</div>
         <h1 className="text-sm font-poppins text-[#ff12c8] ">Slide, Shuffle, and Solve – Unblock the Chain!</h1>
@@ -755,6 +755,7 @@ export default function Home() {
           </div>
         )}
       </div>
+</div>
 </div>
       {/* Preloader overlay */}
       {!preloaderDone && <Preloader onComplete={() => setPreloaderDone(true)} />}

@@ -70,3 +70,17 @@ body {
     @apply bg-background text-foreground;
   }
 }
+/* styles/globals.css */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 10px;
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f3f3f3; /* Background of track */
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background:#ff12c8; /* Thumb color */
+  border-radius: 10px;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #ff12c8; /* Thumb hover color */
+}
