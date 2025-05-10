@@ -493,7 +493,7 @@ export default function Home() {
     <div className=""><Volume2 size={16} strokeWidth={2} /></div>
   </div>
 </div>
-<div className="bg-white rounded-t-lg  h-[70vh] w-[90vw] md:h-[unset] md:w-full md:max-w-[700px] shadow-2xl flex flex-col items-center md:relative">
+<div className="bg-white rounded-t-lg  h-[85vh] w-[90vw] md:h-[unset] md:w-full md:max-w-[700px] shadow-2xl flex flex-col items-center md:relative">
 
 <div className=" w-full z-20 sticky top-0  rounded-t-lg bg-gradient-to-b from-[#e0e0e0] to-[#b5b5b5]  flex items-center justify-between px-4 ">
   {/* Left: Traffic lights */}
